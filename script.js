@@ -1,4 +1,4 @@
-const apiKey = '4a53b51a10b94aab80200d3d';
+const apiKey = '6f447e0e94adc9a4e8af203c';
 
 let baseCurrency = 'AZN';
 
