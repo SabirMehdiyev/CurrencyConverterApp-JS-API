@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="nav-logo">
+                <img src="./images/Nav-logo.svg" alt="header-logo">
+            </div>
+            <ul>
+                <li><a href="#">БАНК</a></li>
+                <li><a href="#">БИЗНЕС</a></li>
+                <li><a href="#">ИНВЕСТИЦИИ</a></li>
+                <li><a href="#">СТРАХОВАНИЕ</a></li>
+                <li><a href="#">МОБАЙЛ</a></li>
+                <li><a href="#">ПУТЕШЕСТВИЯ</a></li>
+                <li><a href="#">РАЗВЛЕЧЕНИЯ</a></li>
+            </ul>
+            <a class="login-btn" href="#">ВОЙТИ</a>
+        </div>
+    </header>
+    <div class="main">
+        <h1>Конвертер валют онлайн</h1>
+        <div class="convert-part">
+            <div class="first-part">
+                <span class="input-title">У меня есть</span>
+                <div class="currency-left">
+                    <div class="currency-option-left bg-purple">AZN</div>
+                    <div class="currency-option-left">RUB</div>
+                    <div class="currency-option-left">USD</div>
+                    <div class="currency-option-left">EUR</div>
+                </div>
+                <div class="content">
+                    <!-- <input type="text" id="from-input" oninput="validateInput(this, 'from');"> -->
+                    <input type="text" id="from-input">
+                    <span class="currency-value">1 <span id="from-currency">AZN</span> = <span id="from-rate">1.0</span>
+                        <span id="from-target">USD</span></span>
+                </div>
+            </div>
+            <div class="second-part">
+                <span class="input-title">Хочу приобрести</span>
+                <div class="currency-right">
+                    <div class="currency-option-right">AZN</div>
+                    <div class="currency-option-right">RUB</div>
+                    <div class="currency-option-right bg-purple">USD</div>
+                    <div class="currency-option-right">EUR</div>
+                </div>
+                <div class="content">
+                    <input type="text" id="to-input">
+                    <span class="currency-value">1 <span id="to-currency">USD</span> = <span id="to-rate">1.0</span>
+                        <span id="to-target">AZN</span></span>
+                </div>
+            </div>
+        </div>
+        <p id="error-message">Error fetching exchange rates :(</p>
+    </div>
+
+    <!-- Add this p tag for displaying error messages -->
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.1/axios.min.js"
+        integrity="sha512-m9S8W3a9hhBHPFAbEIaG7J9P92dzcAWwM42VvJp5n1/M599ldK6Z2st2SfJGsX0QR4LfCVr681vyU5vW8d218w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
