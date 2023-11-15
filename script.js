@@ -50,7 +50,7 @@ document.querySelectorAll('.second-part .currency-option-right').forEach((option
 });
 
 lefts.forEach(item => item.addEventListener("click", function () {
-    var activeCurrencyRight = document.querySelector(".currency-right>.bg-purple");
+    let activeCurrencyRight = document.querySelector(".currency-right>.bg-purple");
 
     fetch(`https://v6.exchangerate-api.com/v6/${apiKey}/latest/${this.innerHTML}`)
         .then(response => {
@@ -77,7 +77,7 @@ lefts.forEach(item => item.addEventListener("click", function () {
 }));
 
 rights.forEach(item => item.addEventListener("click", function () {
-    var activeCurrencyLeft = document.querySelector(".currency-left>.bg-purple");
+    let activeCurrencyLeft = document.querySelector(".currency-left>.bg-purple");
 
     fetch(`https://v6.exchangerate-api.com/v6/${apiKey}/latest/${this.innerHTML}`)
         .then(response => {
